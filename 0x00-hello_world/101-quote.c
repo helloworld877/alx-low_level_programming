@@ -9,6 +9,6 @@
 int main(void)
 {
 const char txt[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-syscall(SYS_write, 1,txt, sizeof(txt)); 
+syscall(SYS_write, 1, txt, sizeof(txt));
 return (1);
 }
