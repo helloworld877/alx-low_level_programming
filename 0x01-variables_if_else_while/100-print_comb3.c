@@ -16,9 +16,11 @@ int main(void)
 			putchar(tens_digit + '0');
 			putchar(ones_digit + '0');
 
-			if (tens_digit != '8' && ones_digit != '9')
+			if (!((tens_digit == 8 && ones_digit == 9)))
+			{
 				putchar(',');
-			putchar(' ');
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
