@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main()
+int main(void)
 {
 	int tens_digit, ones_digit;
 
@@ -14,8 +14,6 @@ int main()
 			putchar(' ');
 		}
 	}
-
 	putchar('\n');
-
-	return 0;
+	return (0);
 }
