@@ -10,11 +10,12 @@
 int main(void)
 {
 	int x;
-	char hex_chars[16] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
 
-	for (x = 0; x < 16; x++)
+	for (x = 'Z'; x >= 'A'; x--)
 	{
-		putchar(hex_chars[x]);
+		int lower_x = tolower(x);
+
+		putchar(lower_x);
 	}
 
 	putchar('\n');
