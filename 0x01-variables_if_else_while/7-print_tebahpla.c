@@ -10,7 +10,6 @@
 int main(void)
 {
 	int x;
-	int y;
 
 	for (x = 'Z'; x >= 'A'; x--)
 	{
