@@ -15,7 +15,8 @@ int main(void)
     {
         int lower_x = tolower(x);
 
-        putchar(lower_x);
+        if (lower_x != 'q' && lower_x != 'e')
+            putchar(lower_x);
     }
     putchar('\n');
     return (0);
