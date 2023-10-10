@@ -3,9 +3,12 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - Entry point
- * Description: 'the program's description'
- * Return: Always 0 (Success)
+ * _abs- gets abs of a number.
+ *
+ * @n: A number.
+ *
+ * Return:
+ * True if the character is lowercase, False otherwise.
  */
 
 int _abs(int n)
@@ -14,20 +17,5 @@ int _abs(int n)
     {
         n = n * -1;
     }
-    return n;
-}
-
-int main(void)
-{
-    int r;
-
-    r = _abs(-1);
-    printf("%d\n", r);
-    r = _abs(0);
-    printf("%d\n", r);
-    r = _abs(1);
-    printf("%d\n", r);
-    r = _abs(-98);
-    printf("%d\n", r);
-    return (0);
+    return (n);
 }
