@@ -29,22 +29,7 @@ void print_times_table(int n)
 			}
 			x = i * j;
 
-			if (x < 10)
-			{
-				printf("   %d", i * j);
-			}
-			else if (x < 100)
-			{
-				printf("  %d", x);
-			}
-			else if (x < 1000)
-			{
-				printf(" %d", x);
-			}
-			else
-			{
-				printf("%d", x);
-			}
+			printf("%4d", x);
 			if (j != 9)
 			{
 				_putchar(',');
