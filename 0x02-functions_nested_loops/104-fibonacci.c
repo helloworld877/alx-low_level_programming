@@ -6,12 +6,10 @@
 void addStrings(char *a, char *b, char *result)
 {
 	int carry = 0;
-	int sum;
+	int sum, length, m;
 	int length_a = strlen(a);
 	int length_b = strlen(b);
-	int length, m;
 	char temp;
-
 	int i = length_a - 1;
 	int j = length_b - 1;
 	int k = 0;
