@@ -14,8 +14,8 @@
 
 int add(int x, int y)
 {
-    int res;
+	int res;
 
-    res = x + y;
-    return (res);
+	res = x + y;
+	return (res);
 }
