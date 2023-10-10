@@ -10,7 +10,7 @@
  */
 int main()
 {
-    long a = 1, b = 2, sum = 0;
+    long a = 1, b = 2, sum = 0, next;
 
     while (b <= 4000000)
     {
@@ -18,8 +18,6 @@ int main()
         {
             sum += b;
         }
-
-        long next;
 
         next = a + b;
         a = b;
