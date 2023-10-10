@@ -10,19 +10,19 @@
  */
 int main(void)
 {
-    long a = 1, b = 2, next, i;
+	long a = 1, b = 2, next, i;
 
-    printf("%ld, %ld", a, b);
-    for (i = 0; i < 96; i++)
-    {
-        next = a + b;
-        printf(", %ld", next);
+	printf("%ld, %ld", a, b);
+	for (i = 0; i < 96; i++)
+	{
+		next = a + b;
+		printf(", %ld", next);
 
-        a = b;
-        b = next;
-    }
+		a = b;
+		b = next;
+	}
 
-    printf("\n");
+	printf("\n");
 
-    return (0);
+	return (0);
 }
