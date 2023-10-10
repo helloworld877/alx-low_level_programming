@@ -3,6 +3,16 @@
 
 #define MAX_DIGITS 1000
 
+/**
+ * addStrings- prints to 98.
+ *
+ * @a: A number.
+ * @b: A number.
+ * @result: A number.
+ * Return:
+ * True if the character is lowercase, False otherwise.
+ */
+
 void addStrings(char *a, char *b, char *result)
 {
 	int carry = 0;
@@ -46,6 +56,14 @@ void addStrings(char *a, char *b, char *result)
 	}
 }
 
+/**
+ * fibonacci- prints to 98.
+ *
+ * @n: A number.
+ * Return:
+ * True if the character is lowercase, False otherwise.
+ */
+
 void fibonacci(int n)
 {
 	char a[MAX_DIGITS];
@@ -76,6 +94,11 @@ void fibonacci(int n)
 	printf("\n");
 }
 
+/**
+ * main - Entry point
+ * Description: 'the program's description'
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	fibonacci(98);
