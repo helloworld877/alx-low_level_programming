@@ -12,10 +12,11 @@ int main(void)
 {
 	char str[] = "_putchar\n";
 	int i;
+
 	for (i = 0; i < (int)strlen(str); i++)
 	{
 		_putchar(str[i]);
 	}
 
-	return 0;
+	return (0);
 }
