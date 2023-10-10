@@ -12,11 +12,11 @@ int main(void)
 {
 	long a = 1, b = 2, next;
 
-	printf("%d, %d", a, b);
+	printf("%ld, %ld", a, b);
 	for (int i = 0; i < 48; i++)
 	{
 		next = a + b;
-		printf(", %d", next);
+		printf(", %ld", next);
 
 		a = b;
 		b = next;
