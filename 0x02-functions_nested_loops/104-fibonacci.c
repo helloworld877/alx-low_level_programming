@@ -1,28 +1,81 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 #include <string.h>
-#include "main.h"
-/**
- * main - Entry point
- * Description: 'the program's description'
- * Return: Always 0 (Success)
- */
-int main(void)
+
+#define MAX_DIGITS 1000
+
+void addStrings(char *a, char *b, char *result)
 {
-	long a = 1, b = 2, next, i;
+	int carry = 0;
+	int sum;
+	int length_a = strlen(a);
+	int length_b = strlen(b);
 
-	printf("%ld, %ld", a, b);
-	for (i = 0; i < 96; i++)
+	int i = length_a - 1;
+	int j = length_b - 1;
+	int k = 0;
+
+	while (i >= 0 || j >= 0 || carry > 0)
 	{
-		next = a + b;
-		printf(", %ld", next);
+		sum = carry;
+		if (i >= 0)
+		{
+			sum += a[i] - '0';
+			i--;
+		}
+		if (j >= 0)
+		{
+			sum += b[j] - '0';
+			j--;
+		}
 
-		a = b;
-		b = next;
+		carry = sum / 10;
+		result[k] = sum % 10 + '0';
+		k++;
+	}
+
+	result[k] = '\0';
+
+	// Reverse the result string
+	int length = strlen(result);
+	for (int m = 0; m < length / 2; m++)
+	{
+		char temp = result[m];
+		result[m] = result[length - m - 1];
+		result[length - m - 1] = temp;
+	}
+}
+
+void fibonacci(int n)
+{
+	char a[MAX_DIGITS];
+	char b[MAX_DIGITS];
+	char c[MAX_DIGITS];
+
+	strcpy(a, "1");
+	strcpy(b, "2");
+
+	printf("%s, %s, ", a, b);
+
+	for (int i = 3; i <= n; i++)
+	{
+		addStrings(a, b, c);
+
+		printf("%s", c);
+
+		if (i < n)
+		{
+			printf(", ");
+		}
+
+		strcpy(a, b);
+		strcpy(b, c);
 	}
 
 	printf("\n");
+}
 
-	return (0);
+int main()
+{
+	fibonacci(98);
+	return 0;
 }
