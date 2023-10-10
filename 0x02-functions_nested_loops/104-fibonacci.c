@@ -9,6 +9,7 @@ void addStrings(char *a, char *b, char *result)
 	int sum;
 	int length_a = strlen(a);
 	int length_b = strlen(b);
+	int length, m;
 
 	int i = length_a - 1;
 	int j = length_b - 1;
@@ -35,9 +36,8 @@ void addStrings(char *a, char *b, char *result)
 
 	result[k] = '\0';
 
-	// Reverse the result string
-	int length = strlen(result);
-	for (int m = 0; m < length / 2; m++)
+	length = strlen(result);
+	for (m = 0; m < length / 2; m++)
 	{
 		char temp = result[m];
 		result[m] = result[length - m - 1];
@@ -50,13 +50,14 @@ void fibonacci(int n)
 	char a[MAX_DIGITS];
 	char b[MAX_DIGITS];
 	char c[MAX_DIGITS];
+	int i;
 
 	strcpy(a, "1");
 	strcpy(b, "2");
 
 	printf("%s, %s, ", a, b);
 
-	for (int i = 3; i <= n; i++)
+	for (i = 3; i <= n; i++)
 	{
 		addStrings(a, b, c);
 
