@@ -26,8 +26,3 @@ void print_to_98(int n)
 		}
 	}
 }
-
-void main()
-{
-	print_to_98(12);
-}
