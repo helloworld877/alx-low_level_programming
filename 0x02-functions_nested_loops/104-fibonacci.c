@@ -37,20 +37,15 @@ void addStrings(char *a, char *b, char *result)
 			sum += b[j] - '0';
 			j--;
 		}
-
 		carry = sum / 10;
 		result[k] = sum % 10 + '0';
 		k++;
 	}
-
 	result[k] = '\0';
-
 	length = strlen(result);
-
 	for (m = 0; m < length / 2; m++)
 	{
 		temp = result[m];
-
 		result[m] = result[length - m - 1];
 		result[length - m - 1] = temp;
 	}
