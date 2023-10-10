@@ -10,7 +10,7 @@
  */
 int main()
 {
-    long long a = 1, b = 2, sum = 0;
+    long a = 1, b = 2, sum = 0;
 
     while (b <= 4000000)
     {
@@ -19,12 +19,12 @@ int main()
             sum += b;
         }
 
-        long long next = a + b;
+        long next = a + b;
         a = b;
         b = next;
     }
 
-    printf("%lld\n", sum);
+    printf("%ld\n", sum);
 
     return 0;
 }
