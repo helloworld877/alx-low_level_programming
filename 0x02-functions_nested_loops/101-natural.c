@@ -10,18 +10,18 @@
  */
 int main(void)
 {
-    int i;
-    int x;
+	int i;
+	int x;
 
-    x = 0;
-    for (i = 0; i < 1024; i++)
-    {
-        if ((i % 5 == 0) || (i % 3 == 0))
-        {
-            x += i;
-        }
-    }
+	x = 0;
+	for (i = 0; i < 1024; i++)
+	{
+		if ((i % 5 == 0) || (i % 3 == 0))
+		{
+			x += i;
+		}
+	}
 
-    printf(x);
-    return (0);
+	printf(x);
+	return (0);
 }
