@@ -7,12 +7,19 @@
  * Description: 'the program's description'
  * Return: Always 0 (Success)
  */
-int main(void)
+
+void print_alphabet(void)
 {
+
     for (int i = 'a'; i <= 'z'; i++)
     {
         _putchar(i);
     }
     _putchar('\n');
-    return 0;
+}
+
+int main(void)
+{
+    print_alphabet();
+    return (0);
 }
