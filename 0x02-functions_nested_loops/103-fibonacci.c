@@ -8,7 +8,7 @@
  * Description: 'the program's description'
  * Return: Always 0 (Success)
  */
-int main()
+void main(void)
 {
 	long a = 1, b = 2, sum = 0, next;
 
@@ -25,6 +25,4 @@ int main()
 	}
 
 	printf("%ld\n", sum);
-
-	return 0;
 }
