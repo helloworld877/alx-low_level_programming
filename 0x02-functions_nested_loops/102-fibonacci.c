@@ -10,13 +10,13 @@
  */
 int main(void)
 {
-	long long a = 1, b = 2, next;
+	long a = 1, b = 2, next;
 
-	printf("%lld, %lld", a, b);
+	printf("%d, %d", a, b);
 	for (int i = 0; i < 48; i++)
 	{
 		next = a + b;
-		printf(", %lld", next);
+		printf(", %d", next);
 
 		a = b;
 		b = next;
