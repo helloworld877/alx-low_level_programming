@@ -8,7 +8,7 @@
  * Description: 'the program's description'
  * Return: Always 0 (Success)
  */
-void main(void)
+void main()
 {
 	long a = 1, b = 2, sum = 0, next;
 
