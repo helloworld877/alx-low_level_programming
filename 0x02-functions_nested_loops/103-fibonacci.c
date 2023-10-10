@@ -19,7 +19,9 @@ int main()
             sum += b;
         }
 
-        long next = a + b;
+        long next;
+
+        next = a + b;
         a = b;
         b = next;
     }
