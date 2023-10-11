@@ -13,7 +13,6 @@ void print_remaining_days(int month, int day, int year)
 {
 	if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
 	{
-		// Check if the date is February 29th
 		if (month == 2 && day == 29)
 		{
 			printf("Day of the year: %d\n", day);
@@ -21,7 +20,6 @@ void print_remaining_days(int month, int day, int year)
 		}
 		else
 		{
-			// If the date is not February 29th, handle it like a normal leap year
 			if (month >= 2 && day >= 60)
 			{
 				day++;
@@ -33,7 +31,6 @@ void print_remaining_days(int month, int day, int year)
 	}
 	else
 	{
-		// If the year is not a leap year, handle it like a normal year
 		if (month == 2 && day == 60)
 		{
 			printf("Invalid date: %02d/%02d/%04d\n", month, day - 31, year);
