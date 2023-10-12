@@ -3,29 +3,28 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_diagonal- multiplies 2 numbers.
+ * print_square- multiplies 2 numbers.
  *
- * @n: A number.
+ * @size: A number.
  *
  * Return:
  * True if the character is lowercase, False otherwise.
  */
 
-void print_diagonal(int n)
+void print_square(int size)
 {
     int i, j;
 
-    if (n <= 0)
+    if (size <= 0)
     {
         _putchar('\n');
     }
-    for (i = 0; i < n; i++)
+    for (i = 0; i < size; i++)
     {
-        for (j = 0; j < i; j++)
+        for (j = 0; j < size; j++)
         {
-            _putchar(' ');
+            _putchar('#');
         }
-        _putchar('\\');
         _putchar('\n');
     }
 }
