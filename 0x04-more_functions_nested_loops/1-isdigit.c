@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * _isDigit - Checks if a character is digit.
+ * _isdigit - Checks if a character is digit.
  *
  * @c: A character.
  *
