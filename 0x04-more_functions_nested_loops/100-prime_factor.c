@@ -44,7 +44,7 @@ int main(void)
 	if (n > 4)
 		maxPrime = n;
 
-	printf("%ld\n", maxPrime);
+	printf("%lu\n", maxPrime);
 
 	return (0);
 }
