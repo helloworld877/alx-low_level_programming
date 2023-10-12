@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * _isUpper - Checks if a character is uppercase.
+ * _isupper - Checks if a character is uppercase.
  *
  * @c: A character.
  *
