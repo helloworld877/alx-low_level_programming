@@ -3,19 +3,20 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * _isDigit - Checks if a character is digit.
+ * print_numbers - multiplies 2 numbers.
  *
- * @c: A character.
  *
  * Return:
  * True if the character is lowercase, False otherwise.
  */
 
-int _isdigit(int c)
+void print_numbers(void)
 {
-    if (c >= 65 && c <= 90)
+    int i;
+
+    for (i = 0; i < 10; i++)
     {
-        return (1);
+        _putchar(i + '0');
     }
-    return (0);
+    _putchar("\n");
 }
