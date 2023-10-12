@@ -10,6 +10,7 @@ int main()
 {
 	long n;
 	long maxPrime;
+	int i;
 
 	maxPrime = -1;
 	n = 25698751364526;
@@ -26,7 +27,7 @@ int main()
 		n = n / 3;
 	}
 
-	for (int i = 5; i * i <= n; i += 6)
+	for (i = 5; i * i <= n; i += 6)
 	{
 		while (n % i == 0)
 		{
