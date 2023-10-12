@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_most_numbers - multiplies 2 numbers.
+ * more_numbers - multiplies 2 numbers.
  *
  *
  * Return:
