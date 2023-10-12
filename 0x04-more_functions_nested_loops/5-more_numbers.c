@@ -10,16 +10,22 @@
  * True if the character is lowercase, False otherwise.
  */
 
-void print_most_numbers(void)
+void more_numbers(void)
 {
-	int i;
+	int i, j, tens, units;
 
 	for (i = 0; i < 10; i++)
 	{
-		if (i != 2 && i != 4)
+		for (j = 0; j < 15; j++)
 		{
-			_putchar(i + '0');
+			tens = j / 10;
+			units = j % 10;
+			if (j >= 10)
+			{
+				_putchar(tens + '0');
+			}
+			_putchar(units + '0');
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
