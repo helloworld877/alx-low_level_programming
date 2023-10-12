@@ -6,7 +6,7 @@
  * Return: 0
  */
 
-int main()
+int main(void)
 {
 	long n;
 	long maxPrime;
@@ -46,5 +46,5 @@ int main()
 
 	printf("%ld", maxPrime);
 
-	return 0;
+	return (0);
 }
