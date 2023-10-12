@@ -8,8 +8,8 @@
 
 int main(void)
 {
-	long n;
-	long maxPrime;
+	unsigned long n;
+	unsigned long maxPrime;
 	int i;
 
 	maxPrime = -1;
