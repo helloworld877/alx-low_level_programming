@@ -29,4 +29,6 @@ void rev_string(char *s)
 		s--;
 		rev++;
 	}
+
+	s = rev;
 }
