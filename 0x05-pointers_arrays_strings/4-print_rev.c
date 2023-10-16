@@ -3,14 +3,14 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * rev_string- Checks if a character is a letter.
+ * print_rev- Checks if a character is a letter.
  *
  * @s: A pointer.
  *
  * Return:
  * True if the character is lowercase, False otherwise.
  */
-void rev_string(char *s)
+void print_rev(char *s)
 {
 	int length, i;
 
