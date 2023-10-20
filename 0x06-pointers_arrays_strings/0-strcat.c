@@ -5,7 +5,8 @@
 /**
  * _strcat- Checks if a character is a letter.
  *
- * @n: A pointer.
+ * @dest: A pointer.
+ * @src: A pointer.
  *
  * Return:
  * True if the character is lowercase, False otherwise.
