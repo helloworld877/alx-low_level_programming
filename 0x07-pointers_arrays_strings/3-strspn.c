@@ -13,11 +13,6 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	typedef enum
-	{
-		false,
-		true
-	} bool;
 
 	unsigned int i;
 	unsigned int j;
@@ -43,5 +38,5 @@ unsigned int _strspn(char *s, char *accept)
 		i++;
 		s++;
 	}
-	return i;
+	return (i);
 }
